@@ -1,0 +1,12 @@
+{
+    "name": "cordova-plugin-inappbrowser",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "install": "tsc"
+    },
+    "cordova": {
+        "serviceName": "InAppBrowser"
+    }
+}
