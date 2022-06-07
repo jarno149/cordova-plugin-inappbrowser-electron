@@ -34,6 +34,8 @@
         <engine name="cordova-android" version=">=9.0.0" />
         <engine name="cordova-ios" version=">=6.0.0" />
     </engines>
+    
+    <hook type="after_prepare" src="scripts/after_prepare.js" />
 
     <!-- android -->
     <platform name="android">
@@ -125,5 +127,12 @@
         <js-module src="src/browser/InAppBrowserProxy.js" name="InAppBrowserProxy">
             <runs />
         </js-module>
+    </platform>
+
+    <platform name="electron">
+        <js-module src="www/inappbrowser.js" name="inappbrowser">
+            <clobbers target="cordova.InAppBrowser.open" />
+        </js-module>
+        <framework src="src/electron" />
     </platform>
 </plugin>
