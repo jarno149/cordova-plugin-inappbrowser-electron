@@ -6,6 +6,9 @@
     "scripts": {
         "install": "tsc"
     },
+    "devDependencies": {
+        "typescript": "^4.7.3"
+    },
     "cordova": {
         "serviceName": "InAppBrowser"
     }
